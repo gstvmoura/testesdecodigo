@@ -1,8 +1,7 @@
 from barcode import EAN13
-
 from barcode.writer import ImageWriter
 
-number = '043280710847'
-my_code = EAN13(number, writer=ImageWriter())
+numero = (input("Coloque um número (somente números!) com 12 digitos: "))
+codigo = EAN13(numero, writer=ImageWriter())
 
-my_code.save("new_code1")
+codigo.save("novo_codigo1")
